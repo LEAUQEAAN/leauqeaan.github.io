@@ -354,7 +354,19 @@
 
       
         
-          <h2 id="hexo发布图片博客"><a href="#hexo发布图片博客" class="headerlink" title="hexo发布图片博客"></a>hexo发布图片博客</h2><p>插入本地图片需要修改主题_config.yml配置文件post_asset_folder项为true。</p>
+          <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><ul>
+<li><p>首先安装Nodejs，直接进入官网下载安装就OK</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">D:\Blogs&gt;<span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line"></span><br><span class="line">v8.<span class="number">11.3</span></span><br><span class="line"></span><br><span class="line">D:\Blogs&gt;npm -v</span><br><span class="line"></span><br><span class="line"><span class="number">5.6</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装hexo命令：<code>npm i -g hexo</code></p>
+</li>
+<li><p>安装完成后，查看版本：<code>hexo -v</code></p>
+</li>
+<li><p>初始化命令： </p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">npm i hexo-server</span><br><span class="line"></span><br><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line"></span><br><span class="line">npm <span class="keyword">install</span> hexo-asset-image <span class="comment">--save</span></span><br><span class="line"></span><br><span class="line">mpm d -g</span><br></pre></td></tr></table></figure>
+<h2 id="hexo发布图片博客"><a href="#hexo发布图片博客" class="headerlink" title="hexo发布图片博客"></a>hexo发布图片博客</h2><p>插入本地图片需要修改主题_config.yml配置文件post_asset_folder项为true。</p>
 <p>使用插件达到插入本地图片，在根目录输入如下命令安装：</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
 <p>今后你new 一篇博客时/source/_posts文件夹内除了 <code>xxxx.md</code> 文件还有一个同名的文件夹，把图片放到里面即可.</p>
