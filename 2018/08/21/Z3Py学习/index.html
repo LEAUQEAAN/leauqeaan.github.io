@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Z3Py,Z3 Solver,SMT," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="~~~~~~~~~~~~~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LEAUQEAAN的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="integer     整型ToInt(arg)     转换为整型 创建对象的方式： 123x = Int(&apos;x&apos;) x,y = Ints(&apos;x y&apos;) real    实数ToReal(arg)    转换为有理数 123x = Real(&apos;x&apos;) x ，y = Reals(&apos;x y&apos;) 例： 123456789101112131415x = Real(&apos;x&apos;)solve(3*x==1)# 启">
+<meta name="keywords" content="Z3Py,Z3 Solver,SMT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Z3Py">
+<meta property="og:url" content="http://yoursite.com/2018/08/21/Z3Py学习/index.html">
 <meta property="og:site_name" content="LEAUQEAAN的博客">
-<meta property="og:description" content="~~~~~~~~~~~~~">
+<meta property="og:description" content="integer     整型ToInt(arg)     转换为整型 创建对象的方式： 123x = Int(&apos;x&apos;) x,y = Ints(&apos;x y&apos;) real    实数ToReal(arg)    转换为有理数 123x = Real(&apos;x&apos;) x ，y = Reals(&apos;x y&apos;) 例： 123456789101112131415x = Real(&apos;x&apos;)solve(3*x==1)# 启">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-21T02:45:24.211Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LEAUQEAAN的博客">
-<meta name="twitter:description" content="~~~~~~~~~~~~~">
+<meta name="twitter:title" content="Z3Py">
+<meta name="twitter:description" content="integer     整型ToInt(arg)     转换为整型 创建对象的方式： 123x = Int(&apos;x&apos;) x,y = Ints(&apos;x y&apos;) real    实数ToReal(arg)    转换为有理数 123x = Real(&apos;x&apos;) x ，y = Reals(&apos;x y&apos;) 例： 123456789101112131415x = Real(&apos;x&apos;)solve(3*x==1)# 启">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/21/Z3Py学习/"/>
 
 
 
 
 
-  <title>LEAUQEAAN的博客</title>
+  <title>Z3Py | LEAUQEAAN的博客</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/21/Z3Py学习/" itemprop="url">Z3Py</a></h1>
+          <h1 class="post-title" itemprop="name headline">Z3Py</h1>
         
 
         <div class="post-meta">
@@ -335,6 +334,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -353,9 +357,7 @@
       
 
       
-        
-          
-            <h5 id="integer-整型"><a href="#integer-整型" class="headerlink" title="integer     整型"></a>integer     整型</h5><p>ToInt(arg)     转换为整型</p>
+        <h5 id="integer-整型"><a href="#integer-整型" class="headerlink" title="integer     整型"></a>integer     整型</h5><p>ToInt(arg)     转换为整型</p>
 <p>创建对象的方式：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = Int(<span class="string">'x'</span>) </span><br><span class="line"></span><br><span class="line">x,y = Ints(<span class="string">'x y'</span>)</span><br></pre></td></tr></table></figure>
 <h5 id="real-实数"><a href="#real-实数" class="headerlink" title="real    实数"></a>real    实数</h5><p>ToReal(arg)    转换为有理数</p>
@@ -381,8 +383,6 @@
 <p>输出：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Proving demorgan...</span><br><span class="line">proved</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -397,287 +397,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/17/命题逻辑/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LEAUQEAAN">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LEAUQEAAN的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/17/命题逻辑/" itemprop="url">命题逻辑</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-17T19:19:05+08:00">
-                2018-08-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Z3Py/" rel="tag"># Z3Py</a>
           
-            
+            <a href="/tags/Z3-Solver/" rel="tag"># Z3 Solver</a>
           
-
+            <a href="/tags/SMT/" rel="tag"># SMT</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h2 id="自然演绎"><a href="#自然演绎" class="headerlink" title="自然演绎"></a>自然演绎</h2><p><img src="/2018/08/17/命题逻辑/演绎规则语义.png" alt=""></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/17/命题逻辑/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/17/命题逻辑/" rel="next" title="命题逻辑">
+                <i class="fa fa-chevron-left"></i> 命题逻辑
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/16/关于博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LEAUQEAAN">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LEAUQEAAN的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/16/关于博客/" itemprop="url">关于博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-16T19:20:26+08:00">
-                2018-08-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/构建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">构建博客</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><p>首先安装Nodejs，直接进入官网下载安装就OK</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">D:\Blogs&gt;<span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line"></span><br><span class="line">v8.<span class="number">11.3</span></span><br><span class="line"></span><br><span class="line">D:\Blogs&gt;npm -v</span><br><span class="line"></span><br><span class="line"><span class="number">5.6</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p>安装hexo命令：<code>npm i -g hexo</code></p>
-<p>安装完成后，查看版本：<code>hexo -v</code></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/16/关于博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -687,157 +440,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/16/ToMyDear/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LEAUQEAAN">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LEAUQEAAN的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/16/ToMyDear/" itemprop="url">A Letter For My Dear</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-16T00:00:00+08:00">
-                2018-08-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Love/" itemprop="url" rel="index">
-                    <span itemprop="name">Love</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>亲爱的老婆 ：</p>
-<p>​    明天就是七夕了，我们距上次相聚已经快两个月，我想你了！尤其是在现在这种时候，我真的想你了！本来我还在想着该给你准备一份怎样的七夕礼物的时候，我想过给你做个小程序或者为你单独创建一个公众号，在里面存放一些关于我们的美好记忆。可是，计划赶不上变化吧，你让我买个域名，整个博客，那这个七夕我就为你写一篇属于你的七夕博客吧，希望你能够喜欢。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/16/ToMyDear/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -845,6 +452,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -865,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -930,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#integer-整型"><span class="nav-number">1.</span> <span class="nav-text">integer     整型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#real-实数"><span class="nav-number">2.</span> <span class="nav-text">real    实数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#bool-布尔值"><span class="nav-number">3.</span> <span class="nav-text">bool   布尔值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Solver-求解器"><span class="nav-number">4.</span> <span class="nav-text">Solver  求解器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#算术"><span class="nav-number">5.</span> <span class="nav-text">算术</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#simplify化简"><span class="nav-number">6.</span> <span class="nav-text">simplify化简</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#可满足性和有效性"><span class="nav-number">7.</span> <span class="nav-text">可满足性和有效性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1097,6 +733,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
